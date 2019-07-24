@@ -1,0 +1,81 @@
+<html>
+	<head>
+	<title> SignUp </title>
+	</head>
+	<body>
+	<h2> SignUp Form</h2>
+		<fieldset>
+		<legend align="center"> SignUp </legend>
+		<form action="signup" method="get" align="center">
+		<label> First Name</label>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="text" name="fname" placeholder="Enter First Name">
+		<br/>
+		<br/>
+		<label> User ID</label>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="number" name="id" placeholder="Enter First Name">
+		<br/>
+		<br/>
+		<label> UserName*</label>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="text" name="uname" placeholder="Enter username" autocomplete="disabled"  required>
+		<br/>
+		<br/>
+		<label> Password*</label>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="password" name="pwd" placeholder="Enter password" required>
+		<br/>
+		<br/>
+		
+		<label> Gender</label>
+		<input type="radio" name="gender" value="m"> Male
+		<input type="radio" name="gender" value="f"> Female		
+		<br/>
+		<br/>
+		<label> Languages</label>
+		<input type="checkbox" name="lang" value="EN" checked> English
+		<input type="checkbox" name="lang" value="HI"> Hindi
+		<input type="checkbox" name="lang" value="TE"> Telgu
+		<input type="checkbox" name="lang" value="TA"> Tamil
+		<input type="checkbox" name="lang" value="KA"> Kannada
+		<br/>
+		<br/>
+		<label> Email</label>
+		&nbsp;&nbsp;&nbsp;
+		<input type="email" name="email" required>
+		<br/>
+		<br/>
+		<label> DOB</label>
+		<input type="date" name="date">
+		<br/>
+		<br/>
+		<label> Credit number</label>
+		<input type="number" name="credit" required>
+		<br/>
+		<br/>
+		<label> Address</label>
+		<textarea name="address"> </textarea>
+		<br/>
+		<br/>
+		<label> State</label>
+		<select name="State">
+		<option value="KA">Karnataka</option>
+		<option value="MP">Madhya Pradesh</option>
+		<option value="MA">Maharashtra</option>
+		<option value="UP">Uttar Pradesh</option>
+		</select>
+		<br/>
+		<br/>
+		<label> Role</label>
+          <input type="radio" name="radio" value="admin">Admin
+          &nbsp;&nbsp;
+          <input type="radio" name="radio" value="customer">Customer
+         <br/>
+         <br/>
+		<input type="submit" value="Sign Up">
+		<input type="reset" value="Reset">
+		</form>
+		</fieldset>
+	</body>
+</html>

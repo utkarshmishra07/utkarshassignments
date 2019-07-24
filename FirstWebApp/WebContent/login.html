@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	legend{
+		color:red;
+		text-align: center;
+	}
+	
+	div{
+		text-align:center;
+	}
+	#changediv{
+		padding: 2% 1% 2% 1%
+	}
+	
+	body{
+		text-align:center;
+		font-size:20px;
+		font-family:calibri;
+		color :brown;
+		margin-top:100px;
+		background-repeat: no-repeat;
+		background-image: linear-gradient(to bottom right, rgb(180,150,256), white);
+		background-size: 1000px 1000px;
+	}
+	form{
+		
+	}
+	</style>
+<meta charset="ISO-8859-1">
+<title>Login Form</title>
+</head>
+<body>
+<fieldset >
+<legend >Login</legend>
+<form action="login" method="post">
+UserName: &nbsp; <input type="text" name="uname"/>
+<br/><br/>
+Password: &nbsp; <input type="password" name="pwd"/>
+<br/><br/>
+<!--  Language:<input type="checkbox" name="lan" value="KA">KA
+<input type="checkbox" name="lan" value="EN">EN
+<input type="checkbox" name="lan" value="HI">HI-->
+<input type="submit" value="Login">
+<input type="reset" value="cancel"/><br/><br/>
+<input type="button" style="width:120px" name="btn" value="SignUp" onclick="location.href='signup.html'" >
+
+		
+</form>
+</fieldset>
+
+</body>
+</html>
