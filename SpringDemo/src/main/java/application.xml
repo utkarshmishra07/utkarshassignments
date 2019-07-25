@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+		<bean id="p1" class="mavinproject.beans.PetrolEngine">
+			<property name="hp" value="120"></property>
+			<property name="cc" value="1000"></property>
+			<property name="emodel" value="f1"></property>
+			<property name="cylinder" value="4"></property>
+		</bean>
+		<bean id="t1" class="mavinproject.beans.Tyre">
+			<property name="size" value="18"></property>
+			<property name="t_brand" value="ceat"></property>
+			<property name="psi" value="34"></property>
+		</bean>
+		<bean id="c1" class="mavinproject.beans.Car">
+			<property name="model" value="sports"></property>
+			<property name="cost" value="454565"></property>
+			<property name="tyre" ref="t1"></property>
+			<property name="engine" ref="p1"></property>
+		</bean>
+
+</beans>
