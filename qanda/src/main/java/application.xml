@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+		
+		<bean id="q1" class="mavinproject.qanda.beans.Question">
+			<property name="qid" value="1"></property>
+			<property name="question" value="How are you?"></property>
+			<property name="answers">
+				<list>
+					<ref bean="a1"></ref>
+
+					<ref bean="a2"></ref>
+
+					<ref bean="a3"></ref>
+
+					<ref bean="a4"></ref>
+				</list>
+			</property>
+
+		</bean>
+		<bean id="a1" class="mavinproject.qanda.beans.Answer">
+			<property name="aid" value="1"></property>
+			<property name="answer" value="good"></property>
+			<property name="users">
+				<set>
+					<ref bean="u1"></ref>
+					<ref bean="u2"></ref>
+					<ref bean="u3"></ref>	
+				</set>
+			</property>
+		</bean>
+		<bean id="a2" class="mavinproject.qanda.beans.Answer">
+			<property name="aid" value="2"></property>
+			<property name="answer" value="bad"></property>
+			<property name="users">
+				<set>
+					<ref bean="u1"></ref>
+					<ref bean="u2"></ref>
+					<ref bean="u3"></ref>	
+				</set>
+			</property>
+		</bean>
+		<bean id="a3" class="mavinproject.qanda.beans.Answer">
+			<property name="aid" value="3"></property>
+			<property name="answer" value="yes"></property>
+			<property name="users">
+				<set>
+					<ref bean="u1"></ref>
+					<ref bean="u2"></ref>
+					<ref bean="u3"></ref>	
+				</set>
+			</property>
+		</bean>
+		<bean id="a4" class="mavinproject.qanda.beans.Answer">
+			<property name="aid" value="4"></property>
+			<property name="answer" value="fo"></property>
+			<property name="users">
+				<set>
+					<ref bean="u1"></ref>
+					<ref bean="u2"></ref>
+					<ref bean="u3"></ref>	
+				</set>
+			</property>
+		</bean>
+		<bean id="u1" class="mavinproject.qanda.beans.Users">
+			<property name="uid" value="100"></property>
+			<property name="uname" value="Topper"></property>
+		</bean>
+		<bean id="u2" class="mavinproject.qanda.beans.Users">
+			<property name="uid" value="101"></property>
+			<property name="uname" value="Teacher"></property>
+		</bean>
+		<bean id="u3" class="mavinproject.qanda.beans.Users">
+			<property name="uid" value="102"></property>
+			<property name="uname" value="Failure"></property>
+		</bean>
+		
+
+</beans>
