@@ -45,29 +45,28 @@ public class App
 		p.add(u);
 		a.setUsers(p);
 		l.add(a);
-		
-		/*System.out.println("Enter answer id");
-		a.setAid(sc.nextInt());
-		System.out.println("Enter answer");
-		a.setAnswer(sc.next());
-		a.setUsers(p);
-		l.add(a);
+		Answer a1=(Answer) context.getBean("answer");
 		System.out.println("Enter answer id");
-		a.setAid(sc.nextInt());
+		a1.setAid(sc.nextInt());
 		System.out.println("Enter answer");
-		a.setAnswer(sc.next());
-		a.setUsers(p);
-		l.add(a);
+		a1.setAnswer(sc.next());
+		a1.setUsers(p);
+		l.add(a1);
+		Answer a2=(Answer) context.getBean("answer");
 		System.out.println("Enter answer id");
-		a.setAid(sc.nextInt());
+		a2.setAid(sc.nextInt());
 		System.out.println("Enter answer");
-		a.setAnswer(sc.next());
-		a.setUsers(p);
-		l.add(a);*/
-		
-		
-		
-		
+		a2.setAnswer(sc.next());
+		a2.setUsers(p);
+		l.add(a2);
+		Answer a3=(Answer) context.getBean("answer");
+		System.out.println("Enter answer id");
+		a3.setAid(sc.nextInt());
+		System.out.println("Enter answer");
+		a3.setAnswer(sc.next());
+		a3.setUsers(p);
+		l.add(a3);
+
 		q.setAnswers(l);
 		
 		System.out.println(q);
